@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            html,body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #303e4f;
+            }
+            .heart {
+                display: block;
+                width: 40vmin;
+                height: 40vmin;
+                position: relative;
+            }
+            .spike {
+                width: 60%;
+                height: 60%;
+                transform: rotate(45deg);
+                background-color: #c54039;
+                position: absolute;
+                left: 20%;
+                top: 20.0%;
+            }
+            .shape {
+                background-color: #c54039;
+                position: absolute;
+                top: 0%;
+                width: 60%;
+                height: 60%;
+                border-radius: 50%;
+            }
+            .left {
+                left: 0%;
+            }
+            .right {
+                right: 0%;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div class="heart">
+            <div class="shape left"></div>
+            <div class="shape right"></div>
+            <div class="spike"></div>
+        </div>
     </body>
 </html>

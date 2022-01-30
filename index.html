@@ -2,6 +2,11 @@
 <html>
     <head>
         <style>
+            @import url("https://fonts.googleapis.com/css?family=Poppins");h1 {
+                font-family: 'Lobster Two', sans-serif;
+                font-family: 'Poppins';
+                font-size: 24px
+            }
             html,body {
                 display: flex;
                 justify-content: center;
@@ -17,6 +22,9 @@
                 width: 40vmin;
                 height: 40vmin;
                 position: relative;
+                animation-name: beat;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
             }
             .spike {
                 width: 60%;
@@ -41,6 +49,27 @@
             .right {
                 right: 0%;
             }
+            h1 {
+                position: absolute;
+                font-size: 15vmin;
+                text-align: center;
+                width: 100%;
+                color: #303e4f;
+                top: 3vmin;
+                margin: 0;
+                padding: 0;
+            }
+            @keyframes beat {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
         </style>
     </head>
     <body>
@@ -48,6 +77,7 @@
             <div class="shape left"></div>
             <div class="shape right"></div>
             <div class="spike"></div>
+            <h1>Tazi</h1>
         </div>
     </body>
 </html>

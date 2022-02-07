@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Tazi</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Robin">
+        <meta name="description" content="TODO">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap" rel="stylesheet">
+
         <style>
-            @import url("https://fonts.googleapis.com/css?family=Poppins");h1 {
-                font-family: 'Lobster Two', sans-serif;
-                font-family: 'Poppins';
-                font-size: 24px
-            }
             html,body {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                flex-direction: column;
                 padding: 0;
                 margin: 0;
                 width: 100%;
                 height: 100%;
-                background-color: #303e4f;
+                background-color: #fff;
+            }
+            main {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            h1 {
+                font-family: 'Yellowtail', cursive;
+                font-size: 48px;
+                text-align: center;
+            }
+            h2, p, ol {
+                font-family: 'Open Sans', sans-serif;
+                margin-left: 12px;
+                margin-right: 12px;
             }
             .heart {
+                margin: 15vmin auto 0 auto;
                 display: block;
-                width: 40vmin;
-                height: 40vmin;
+                width: 15vmin;
+                height: 15vmin;
                 position: relative;
                 animation-name: beat;
                 animation-duration: 2s;
@@ -30,13 +48,13 @@
                 width: 60%;
                 height: 60%;
                 transform: rotate(45deg);
-                background-color: #c54039;
+                background-color: #f00;
                 position: absolute;
                 left: 20%;
                 top: 20.0%;
             }
             .shape {
-                background-color: #c54039;
+                background-color: #f00;
                 position: absolute;
                 top: 0%;
                 width: 60%;
@@ -49,35 +67,32 @@
             .right {
                 right: 0%;
             }
-            h1 {
-                position: absolute;
-                font-size: 15vmin;
-                text-align: center;
-                width: 100%;
-                color: #303e4f;
-                top: 3vmin;
-                margin: 0;
-                padding: 0;
-            }
             @keyframes beat {
-                0% {
-                    transform: scale(1);
-                }
-                50% {
-                    transform: scale(1.1);
-                }
-                100% {
-                    transform: scale(1);
-                }
+                0% {transform: scale(1);}
+                50% {transform: scale(1.1);}
+                100% {transform: scale(1);}
             }
         </style>
     </head>
     <body>
-        <div class="heart">
-            <div class="shape left"></div>
-            <div class="shape right"></div>
-            <div class="spike"></div>
+        <main>
+            <div class="heart">
+                <div class="shape left"></div>
+                <div class="shape right"></div>
+                <div class="spike"></div>
+            </div>
+
             <h1>Tazi</h1>
-        </div>
+            <p class="sub"><i>Dr Taz oder ds Tazi isch en person wo me sehr gern het.</i></p>
+            <p class="syn">Synonym: <i>Schatz / Schatzi / Taz / Tazi</i></p>
+            <h2>Ursprung</h2>
+            <p>Abgleitet vom Wort Schatz isch <i>Tazi</i> (männlech au <i>Taz</i>) en Spitzname für öpper wo me sehr gern het.</p>
+            <h2>Bispiu</h2>
+            <ol type="a">
+                <li>Du bisch z beste Tazi wos git!</li>
+                <li>Oh Taz Taz, dass wär doch ned nötig gsi.</li>
+                <li>Ds Tazi geit ga tazle.</li>
+            </ol> 
+        </main>
     </body>
 </html>

@@ -1,98 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tazi</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Robin">
-        <meta name="description" content="TODO">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap" rel="stylesheet">
 
-        <style>
-            html,body {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-            }
-            main {
-                max-width: 500px;
-                margin: 0 auto;
-            }
-            h1 {
-                font-family: 'Yellowtail', cursive;
-                font-size: 48px;
-                text-align: center;
-            }
-            h2, p, ol {
-                font-family: 'Open Sans', sans-serif;
-                margin-left: 12px;
-                margin-right: 12px;
-            }
-            .heart {
-                margin: 15vmin auto 0 auto;
-                display: block;
-                width: 15vmin;
-                height: 15vmin;
-                position: relative;
-                animation-name: beat;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-            }
-            .spike {
-                width: 60%;
-                height: 60%;
-                transform: rotate(45deg);
-                background-color: #f00;
-                position: absolute;
-                left: 20%;
-                top: 20.0%;
-            }
-            .shape {
-                background-color: #f00;
-                position: absolute;
-                top: 0%;
-                width: 60%;
-                height: 60%;
-                border-radius: 50%;
-            }
-            .left {
-                left: 0%;
-            }
-            .right {
-                right: 0%;
-            }
-            @keyframes beat {
-                0% {transform: scale(1);}
-                50% {transform: scale(1.1);}
-                100% {transform: scale(1);}
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <div class="heart">
-                <div class="shape left"></div>
-                <div class="shape right"></div>
-                <div class="spike"></div>
-            </div>
+<head>
+    <title>UWU</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="uwu">
+    <meta name="description" content="uwu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-            <h1>Tazi</h1>
-            <p class="sub"><i>Dr Taz oder ds Tazi isch en person wo me sehr gern het.</i></p>
-            <p class="syn">Synonym: <i>Schatz / Schatzi / Taz / Tazi</i></p>
-            <h2>Ursprung</h2>
-            <p>Abgleitet vom Wort Schatz isch <i>Tazi</i> (männlech au <i>Taz</i>) en Spitzname für öpper wo me sehr gern het.</p>
-            <h2>Bispiu</h2>
-            <ol type="a">
-                <li>Du bisch z beste Tazi wos git!</li>
-                <li>Oh Taz Taz, dass wär doch ned nötig gsi.</li>
-                <li>Ds Tazi geit ga tazle.</li>
-            </ol> 
-        </main>
-    </body>
+    <style>
+        html,
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 94px;
+            text-align: center;
+            color: #F6C6EA;
+            animation-name: beat;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes beat {
+            0% {transform: translateY(0%)}
+            89% {transform: translateY(0%)}
+            90% {transform: translateY(-5%)}
+            95% {transform: translateY(5%)}
+            100% {transform: translateY(0%)}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>uwu</h1>
+</body>
+
+<script>
+    var h1 = document.getElementsByTagName("h1")[0];
+    var uwu = "uwu";
+    var wink = "^w^";
+    setInterval(() => {
+        h1.textContent = wink;
+        setTimeout(() => {
+            h1.textContent = uwu;
+        }, 400);
+        setTimeout(() => {
+            h1.textContent = wink;
+        }, 600);
+        setTimeout(() => {
+            h1.textContent = uwu;
+        }, 800);
+    }, 3000);
+</script>
+
 </html>
